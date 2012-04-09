@@ -1,126 +1,56 @@
-- XML.class.php converts an XML document into an object
-- Schema.class.php converts a schema into class files
-- classes folder holds all the outputted class files
-- hw3.xml and HW3.xsd are test input files
-- test.php is our main script
+PHP JAXB
+========
 
-GitHub Markup
-=============
+This is a plugin designed to make JAXB possible and easy in PHP.
 
-We use this library on GitHub when rendering your README or any other
-rich text file.
+JAXB
+----
 
-Markups
--------
+[JAXB](http://jaxb.java.net/) is a Java Architecture for XML Binding. As you can guess, it is native to the Java language. It is an alternative method for parsing XML documents from other techniques like DOM or SAX. There are two key steps in JAXB:
 
-The following markups are supported.  The dependencies listed are required if
-you wish to run the library.
-
-* [.markdown](http://daringfireball.net/projects/markdown/) -- `gem install redcarpet` (https://github.com/tanoku/redcarpet)
-* [.textile](http://www.textism.com/tools/textile/) -- `gem install RedCloth`
-* [.rdoc](http://rdoc.sourceforge.net/) -- `gem install rdoc -v 3.6.1`
-* [.org](http://orgmode.org/) -- `gem install org-ruby`
-* [.creole](http://wikicreole.org/) -- `gem install creole`
-* [.mediawiki](http://www.mediawiki.org/wiki/Help:Formatting) -- `gem install wikicloth`
-* [.rst](http://docutils.sourceforge.net/rst.html) -- `easy_install docutils`
-* [.asciidoc](http://www.methods.co.nz/asciidoc/) -- `brew install asciidoc`
-* [.pod](http://search.cpan.org/dist/perl/pod/perlpod.pod) -- `Pod::Simple::HTML`
-  comes with Perl >= 5.10. Lower versions should install Pod::Simple from CPAN.
+    1. Creating classes from an XML Schema
+    2. Instantiating those classes using data from XML
 
 
-Contributing
-------------
+### Under the Hood
 
-Want to contribute? Great! There are two ways to add markups.
+By passing in the file path to an XML Schema, our JAXB plugin will read through the schema and pick out all the element definitions which have child elements. These are the XML elements which well will want to create into objects. Any SimpleTypes we can ignore. After that, it's a simple matter of creating a class file with the element's name, and assigning it attributes for every child element. Luckily PHP is a loosly-typed language, so we don't have to worry about data types. *fist pound*.
 
+Running the `parse` method on a schema file should create a bunch of class files and stick them in the `classes` directory. The naming convention for class files is (using a class called 'Name' as an example) `Name.class.php`.
 
-### Commands
+Next, we pass into the plugin the file path to an XML document. The plugin will then read through the XML file, creating objects and setting attributes when necessary. This plugin includes both XML attributes AND child nodes as class properties. If the class property originated as an XML attribute, it will have an underscore before its name.
 
-If your markup is in a language other than Ruby, drop a translator
-script in `lib/github/commands` which accepts input on STDIN and
-returns HTML on STDOUT. See [rest2html][r2h] for an example.
+Example:
 
-Once your script is in place, edit `lib/github/markups.rb` and tell
-GitHub Markup about it. Again we look to [rest2html][r2hc] for
-guidance:
+    <Company ID="2342" Name="Apple, Inc.">
+        <Street>1 Infinite Loop</Street>
+        <City>Cuppertino</City>
+        <State>California</State>
+        <Leader>Tim Cook</Leader>
+    </Company>
 
-    command(:rest2html, /re?st(.txt)?/)
+Will produce the following object:
 
-Here we're telling GitHub Markup of the existence of a `rest2html`
-command which should be used for any file ending in `rest`,
-`rst`, `rest.txt` or `rst.txt`. Any regular expression will do.
+    class Company
+    {
+        private $_ID = "2342";
+        private $_Name = "Apple, Inc.";
+        private $Street = "1 Infinite Loop";
+        private $City = "Cuppertino";
+        private $State = "California";
+        private $Leader = "Tim Cook";
+    }
 
-Finally add your tests. Create a `README.extension` in `test/markups`
-along with a `README.extension.html`. As you may imagine, the
-`README.extension` should be your known input and the
-`README.extension.html` should be the desired output.
+The script will also produce appropriate accessors and mutators, for instance `setName` and `getID` for the above example. I also added in a `hasAttribute` method which uses the `property_exists` PHP method, returning a boolean. Since the accessors and mutators ignore the underscore, you don't have to worry about it. It would just be used for reading in and out XML data, and if you wanted to modify the class file yourself. That's what's awesome about this technique, it creates iterable objects which you can modify and fine tune yourself.
 
-Now run the tests: `rake`
-
-If nothing complains, congratulations!
-
-
-### Classes
-
-If your markup can be translated using a Ruby library, that's
-great. Check out Check `lib/github/markups.rb` for some
-examples. Let's look at Markdown:
-
-    markup(:markdown, /md|mkdn?|markdown/) do |content|
-      Markdown.new(content).to_html
-    end
-
-We give the `markup` method three bits of information: the name of the
-file to `require`, a regular expression for extensions to match, and a
-block to run with unformatted markup which should return HTML.
-
-If you need to monkeypatch a RubyGem or something, check out the
-included RDoc example.
-
-Tests should be added in the same manner as described under the
-`Commands` section.
+The output from reading in an XML file is one large object, with nested objects within it representing the XML document tree.
 
 
-Installation
------------
-
-    gem install github-markup
-
-
-Usage
+FILES
 -----
 
-    require 'github/markup'
-    GitHub::Markup.render('README.markdown', "* One\n* Two")
-
-Or, more realistically:
-
-    require 'github/markup'
-    GitHub::Markup.render(file, File.read(file))
-
-
-Testing
--------
-
-To run the tests:
-
-    $ rake
-
-To add tests see the `Commands` section earlier in this
-README.
-
-
-Contributing
-------------
-
-1. Fork it.
-2. Create a branch (`git checkout -b my_markup`)
-3. Commit your changes (`git commit -am "Added Snarkdown"`)
-4. Push to the branch (`git push origin my_markup`)
-5. Create an [Issue][1] with a link to your branch
-6. Enjoy a refreshing Diet Coke and wait
-
-
-[r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
-[r2hc]: http://github.com/github/markup/tree/master/lib/github/markups.rb#L13
-[1]: http://github.com/github/markup/issues
+* [JAXB.class.php](https://github.com/josephspens/JAXB/blob/master/JAXB.class.php) -- converts a schema into class files, converts an XML document into an object
+* [classes](https://github.com/josephspens/JAXB/blob/master/classes) -- folder holds all the outputted class files
+* [sample.xml](https://github.com/josephspens/JAXB/blob/master/sample.xml) -- test input xml document
+* [sample.xsd](https://github.com/josephspens/JAXB/blob/master/sample.xsd) -- test input schema
+* [test.php](https://github.com/josephspens/JAXB/blob/master/test.php) -- our main script
