@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Companies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hw3.xsd">
+	<Company ID="1554">
+		<Name>YMCA Arrowhead</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>124</ChangedBy>
+			<ChangedOn>5/3/1999 16:19:22</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1555">
+		<Name>AJ Medical Inc.</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>5/4/1999 7:27:18</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1556">
+		<Name>Advance Auto Parts</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>6/1/1999 16:49:25</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1557">
+		<Name>Advance Auto Parts</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>5/4/1999 9:53:39</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1574">
+		<Name>Sally Beauty Company</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Red</RatePlan>
+		<ContractNumber>SR1574</ContractNumber>
+		<LastChanged>
+			<ChangedBy>14</ChangedBy>
+			<ChangedOn>5/10/1999 9:06:32</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1575">
+		<Name>Penfield Federal Credit Union</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>14</ChangedBy>
+			<ChangedOn>5/10/1999 11:17:24</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1576">
+		<Name>Sprint Structured Wire Services</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>System Integrator</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>5/10/1999 16:11:05</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1577">
+		<Name>U.S. Courthouse-Rochester</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>5/10/1999 16:16:03</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1578">
+		<Name>The Hartford</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>110</ChangedBy>
+			<ChangedOn>5/11/1999 11:19:00</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1579">
+		<Name>Cornerstone Dental</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>109</ChangedBy>
+			<ChangedOn>5/11/1999 11:29:36</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1583">
+		<Name>Erie 1 BOCES</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 30</Terms>
+		<RatePlan>Red</RatePlan>
+		<ContractNumber>SR1583</ContractNumber>
+		<LastChanged>
+			<ChangedBy>14</ChangedBy>
+			<ChangedOn>5/12/1999 10:46:28</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1585">
+		<Name>Inacom</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>124</ChangedBy>
+			<ChangedOn>5/12/1999 14:36:23</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1660">
+		<Name>Buffalo Hotel Supply Co., Inc.</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>6/24/1999 10:15:24</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1661">
+		<Name>Compaq</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>6/25/1999 8:33:16</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1662">
+		<Name>St. Amelia School</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>6/28/1999 8:45:51</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1665">
+		<Name>BMG of WNY</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>RPD</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/1/1999 14:52:38</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1666">
+		<Name>J. K. Jewelry</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/2/1999 10:53:01</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1667">
+		<Name>Congregation Beth Sholom</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/6/1999 9:11:22</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1668">
+		<Name>WNY Library Resources Council</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/6/1999 10:32:33</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1669">
+		<Name>Karpus Investment Management</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/7/1999 16:09:18</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1672">
+		<Name>Rochester Broadway Theater</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber>" "</ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/9/1999 11:37:34</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1673">
+		<Name>Gossel, Krieger and Newcomb</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/14/1999 11:01:26</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1675">
+		<Name>Pro Systems</Name>
+		<Salesman>9</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber>" "</ContractNumber>
+		<LastChanged>
+			<ChangedBy>9</ChangedBy>
+			<ChangedOn>7/14/1999 16:37:59</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1676">
+		<Name>Seneca Park Zoo</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Blue</RatePlan>
+		<ContractNumber>SB1676</ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/15/1999 11:12:11</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1677">
+		<Name>Total Access Communications</Name>
+		<Salesman>9</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>9</ChangedBy>
+			<ChangedOn>7/15/1999 15:17:20</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1678">
+		<Name>Walgreens</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/19/1999 10:15:30</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1679">
+		<Name>Rick's Cycle Shop</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/20/1999 9:10:14</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1681">
+		<Name>Churchill Communications</Name>
+		<Salesman>9</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>9</ChangedBy>
+			<ChangedOn>7/20/1999 13:35:05</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1685">
+		<Name>Spartan Computer Services</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 30</Terms>
+		<RatePlan>System Integrator</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/26/1999 10:44:00</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1686">
+		<Name>Denny's Restaurant</Name>
+		<Salesman>109</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>11/22/1999 11:14:02</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1687">
+		<Name>Xnet Associates</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>System Integrator</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>99</ChangedBy>
+			<ChangedOn>7/26/1999 13:24:13</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1688">
+		<Name>Catholic Family Center</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>11/1/1999 12:09:42</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1689">
+		<Name>Heritage Christian Homes, Inc.</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/27/1999 15:13:56</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1690">
+		<Name>CIBER Information Services</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>System Integrator</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>99</ChangedBy>
+			<ChangedOn>1/18/2000 8:58:38</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1691">
+		<Name>Lunatronic</Name>
+		<Salesman>124</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>138</ChangedBy>
+			<ChangedOn>7/28/1999 9:01:43</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="1692">
+		<Name>North Country Business Products</Name>
+		<Salesman>9</Salesman>
+		<Terms>Net 10</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>9</ChangedBy>
+			<ChangedOn>7/28/1999 13:14:46</ChangedOn>
+		</LastChanged>
+	</Company>
+	<Company ID="2259">
+		<Name>CANANDIAGUA WINERIES</Name>
+		<Salesman>14</Salesman>
+		<Terms>Net 30</Terms>
+		<RatePlan>Standard</RatePlan>
+		<ContractNumber></ContractNumber>
+		<LastChanged>
+			<ChangedBy>99</ChangedBy>
+			<ChangedOn>9/15/2000 13:38:12</ChangedOn>
+		</LastChanged>
+	</Company>
+</Companies>

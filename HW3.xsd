@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Companies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Company"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Salesman"/>
+        <xs:element ref="Terms"/>
+        <xs:element ref="RatePlan"/>
+        <xs:element ref="ContractNumber"/>
+        <xs:element ref="LastChanged"/>
+      </xs:sequence>
+      <xs:attribute name="ID" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Salesman" type="xs:integer"/>
+  <xs:element name="Terms" type="xs:string"/>
+  <xs:element name="RatePlan" type="xs:string"/>
+  <xs:element name="ContractNumber" type="xs:string"/>
+  <xs:element name="LastChanged">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ChangedBy"/>
+        <xs:element ref="ChangedOn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangedBy" type="xs:integer"/>
+  <xs:element name="ChangedOn" type="xs:string"/>
+</xs:schema>
