@@ -1,5 +1,0 @@
-- XML.class.php converts an XML document into an object
-- Schema.class.php converts a schema into class files
-- classes folder holds all the outputted class files
-- hw3.xml and HW3.xsd are test input files
-- test.php is our main script
