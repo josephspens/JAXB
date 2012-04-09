@@ -14,11 +14,11 @@ JAXB
 
 ### Under the Hood
 
-By passing in the file path to an XML Schema, our JAXB plugin will read through the schema and pick out all the element definitions which have child elements. These are the XML elements which well will want to create into objects. Any SimpleTypes we can ignore. After that, it's a simple matter of creating a class file with the element's name, and assigning it attributes for every child element. Luckily PHP is a loosly-typed language, so we don't have to worry about data types. *fist pound*.
+By passing in the file path to an XML Schema, our JAXB plugin will read through the schema and pick out all the element definitions which have child elements. These are the XML elements which well will want to create into objects. Any SimpleTypes we can ignore. After that, it's a simple matter of creating a class file with the element's name, and assigning it attributes for every child element. Luckily PHP is a loosly-typed language, so we don't have to worry about data types. **fist pound**.
 
 Running the `parse` method on a schema file should create a bunch of class files and stick them in the `classes` directory. The naming convention for class files is (using a class called 'Name' as an example) `Name.class.php`.
 
-Next, we pass into the plugin the file path to an XML document. The plugin will then read through the XML file, creating objects and setting attributes when necessary. This plugin includes both XML attributes AND child nodes as class properties. If the class property originated as an XML attribute, it will have an underscore before its name.
+Next, we pass into the plugin the file path to an XML document. The plugin will then read through the XML file, creating objects and setting attributes when necessary. This plugin includes both XML attributes *and* child nodes as class properties. If the class property originated as an XML attribute, it will have an underscore before its name.
 
 Example:
 
