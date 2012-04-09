@@ -6,6 +6,7 @@ class JAXB
 
 	}
 
+	// creating Class files
 	function parse($filename){
 		$dom = new DomDocument();
 		$dom->load($filename);
@@ -19,6 +20,7 @@ class JAXB
 		}
 	}
 
+	// reading in XML data
 	function unmarshal($filename){
 		$dom = new DomDocument();
 		$dom->load($filename);
@@ -26,6 +28,7 @@ class JAXB
 		return $this->convert($dom->documentElement);
 	}
 
+	// 'unmarshal' helper method
 	private function convert($element){
 		// require this element's class (made by the Schema parser)
 		require_once("classes/{$element->localName}.class.php");
@@ -74,6 +77,7 @@ class JAXB
 		return $object;
 	}
 
+	// 'parse' helper method
 	private function createClass($element){
 		$name = $element->getAttribute('name');
 		$attributeList = '';
