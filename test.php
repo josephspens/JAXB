@@ -3,7 +3,7 @@
 	// turn the schema into a class file
 	require_once('JAXB.class.php');
 	$jaxb = new JAXB();
-	$jaxb->parse('sample.xsd');
+	$jaxb->parseSchema('sample.xsd');
 	// turn the xml document into an object
 	$object = $jaxb->unmarshal('sample.xml');
 
